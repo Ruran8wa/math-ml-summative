@@ -1,9 +1,45 @@
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-venv/
+.Python
+env/
 .venv/
-*.pkl
-*.csv
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Virtual Environment
+.env
+*.env
+
+# VS Code
 .vscode/
+
+# Compiled Files
+*.out
+*.exe
+*.dll
+*.so
+
+# Data Files
+*.csv
+*.pkl
+
+# Flutter
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+android/.cxx
+android/app/debug
+android/app/profile
+android/app/release
+*.flutter-plugins
+*.flutter-plugins-dependencies
+*.metadata
