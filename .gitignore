@@ -26,7 +26,6 @@ venv/
 
 # Data Files
 *.csv
-*.pkl
 
 # Flutter
 build/

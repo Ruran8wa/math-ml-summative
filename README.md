@@ -37,6 +37,10 @@ A FastAPI service was developed to expose the trained model as an endpoint. The 
    uvicorn api:app --reload
    ```
 
+### Link to the API endpoint
+
+- https://ml-summative-0cuq.onrender.com
+
 ### Frontend (Flutter App)
 
 1. Navigate to the Flutter project directory.
@@ -45,6 +49,10 @@ A FastAPI service was developed to expose the trained model as an endpoint. The 
    cd app
    flutter run
    ```
+
+### Link to a Youtube Demo
+
+- https://youtu.be/2LNcrkWDezg
 
 ## Future Improvements
 
