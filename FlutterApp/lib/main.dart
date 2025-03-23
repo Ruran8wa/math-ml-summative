@@ -50,9 +50,7 @@ class InputData {
 }
 
 Future<double> getPredictedGPA(InputData data) async {
-  final url = Uri.parse(
-    'https://ml-summative-0cuq.onrender.com/predict',
-  ); // Change this if you're using a remote server.
+  final url = Uri.parse('https://ml-summative-0cuq.onrender.com/predict');
 
   final response = await http.post(
     url,
@@ -97,7 +95,7 @@ class PredictionPageState extends State<PredictionPage> {
           child: Column(
             children: [
               _buildTextField(_ageController, 'Age (15-18)', 'Enter your age'),
-              SizedBox(height: 16), // Add spacing between fields
+              SizedBox(height: 16),
               _buildTextField(
                 _genderController,
                 'Gender (0=Male, 1=Female)',
@@ -163,7 +161,7 @@ class PredictionPageState extends State<PredictionPage> {
                 'Volunteering (0=No, 1=Yes)',
                 'Enter 0 for No, 1 for Yes',
               ),
-              SizedBox(height: 20), // More space before the button
+              SizedBox(height: 20),
               ElevatedButton(
                 style: ButtonStyle(
                   backgroundColor: WidgetStatePropertyAll<Color>(
@@ -172,7 +170,6 @@ class PredictionPageState extends State<PredictionPage> {
                   foregroundColor: WidgetStatePropertyAll<Color>(Colors.white),
                 ),
                 onPressed: () async {
-                  // Collect input data
                   final inputData = InputData(
                     age: int.tryParse(_ageController.text) ?? 0,
                     gender: int.tryParse(_genderController.text) ?? 0,
